@@ -1,0 +1,24 @@
+@import "../App.scss";
+
+.order__placed__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8em !important;
+  height: 100vh;
+  max-height: 700px;
+}
+.order__placed__container__heading {
+  font-size: $xl-heading;
+  color: $font-color;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+.order__placed__container__info {
+  font-size: $normal-font-size;
+  color: $font-color;
+  margin: 2em 0em;
+  text-align: center;
+}

@@ -1,0 +1,197 @@
+@import "../App.scss";
+
+.track__order__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8em !important;
+}
+.track__order__container__heading {
+  font-size: $xl-heading;
+  color: $font-color;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+.track__order__container__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+}
+.track__order__container__content__header {
+  display: flex !important;
+  justify-content: space-between !important;
+  width: 80% !important;
+}
+.track__order__nav__pill {
+  color: $font-color !important;
+}
+.track__order__nav__pill:hover {
+  color: $font-color !important;
+}
+.track__order__component {
+  border-radius: 8px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.track__order__component__line {
+  width: 80%;
+  background-color: $primary;
+  height: 5px;
+  border-radius: 5px;
+  margin: 1.5em auto;
+}
+.track__order__component__top {
+  padding: 2em;
+  border-radius: 8px;
+  margin-bottom: 1em;
+  display: flex;
+  align-items: flex-start;
+  background-color: #f8f8f8;
+}
+.track__order__component__top__left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.track__order__component__top__left__order {
+  display: flex;
+  margin-bottom: 1em;
+}
+.track__order__component__top__img {
+  width: 100px;
+  margin-right: 1em;
+}
+.track__order__component__top__left__content {
+  display: flex;
+  flex-direction: column;
+}
+.track__order__component__top__left__content__heading {
+  font-size: $heading-font-size;
+  color: $font-color;
+  font-weight: bold;
+}
+.track__order__component__top__left__content__info {
+  font-size: $normal-font-size;
+  color: $font-color;
+}
+
+.track__order__component__top__right {
+  background-color: #d85757 !important;
+  color: $primary !important;
+  font-size: $normal-font-size !important;
+  border-radius: 5px !important;
+  height: 40px !important;
+}
+.track__order__component__top__right:hover {
+  background-color: darken(#d85757, 10%) !important;
+}
+
+.track__order__component__bottom {
+  background-color: #f8f8f8;
+  padding: 2em;
+  border-radius: 8px;
+}
+.track__order__component__bottom__milestone {
+  position: relative;
+  width: 80%;
+  height: 5px;
+  background-color: $primary;
+  margin: 2em;
+}
+.track__order__component__bottom__milestone__active {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 70%;
+  height: 5px;
+  background-color: $highlite;
+}
+.track__order__component__bottom__milestone__points__1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  position: absolute;
+  top: -13px;
+  left: -30px;
+}
+.track__order__component__bottom__milestone__points__2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  position: absolute;
+  top: -13px;
+  left: 33%;
+}
+.track__order__component__bottom__milestone__points__3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  position: absolute;
+  top: -13px;
+  left: 66%;
+}
+.track__order__component__bottom__milestone__points__4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  position: absolute;
+  top: -13px;
+  left: 97%;
+}
+.track__order__component__bottom__milestone__points__circle {
+  width: 30px;
+  height: 30px;
+  background-color: $primary;
+  border-radius: 30px;
+  position: relative;
+}
+.track__order__component__bottom__milestone__points__circle__active {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: $highlite;
+  position: relative;
+}
+.track__order__component__bottom__milestone__points__circle__info {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 300px;
+  background-color: #ffffff;
+  padding: 1em;
+  border-radius: 10px;
+  z-index: 2;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+.track__order__component__bottom__milestone__points__circle:hover
+  .track__order__component__bottom__milestone__points__circle__info {
+  display: flex;
+}
+.track__order__component__bottom__milestone__points__circle__active:hover
+  .track__order__component__bottom__milestone__points__circle__info {
+  display: flex;
+}
+.track__order__component__bottom__milestone__points__circle__info__heading {
+  font-size: $heading-font-size;
+  font-weight: bold;
+  color: $font-color;
+  margin-bottom: 0.5em;
+}
+.track__order__component__bottom__milestone__points__circle__info__content {
+  font-size: $normal-font-size;
+  color: $font-color;
+}
+.track__order__component__bottom__milestone__points__name {
+  font-size: $normal-font-size;
+  color: $font-color;
+  margin-top: 0.5em;
+}
