@@ -74,7 +74,7 @@ export default function Header({ search }) {
                   transform="translate(0 -117.336)"
                   fill="currentColor"
                   stroke="currentColor"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
               </g>
             </g>
@@ -83,7 +83,7 @@ export default function Header({ search }) {
         {explorePanel ? (
           <ul className="catagory__select__links__list">
             <li className="catagory__select__item">
-              <Link className="catagory__select__link">
+              <Link to="/" className="catagory__select__link">
                 <span>Toys</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +103,7 @@ export default function Header({ search }) {
                       transform="translate(0 -117.336)"
                       fill="currentColor"
                       stroke="currentColor"
-                      stroke-width="1"
+                      strokeWidth="1"
                     />
                   </g>
                 </svg>
@@ -171,7 +171,7 @@ export default function Header({ search }) {
                       transform="translate(0 -117.336)"
                       fill="currentColor"
                       stroke="currentColor"
-                      stroke-width="1"
+                      strokeWidth="1"
                     />
                   </g>
                 </svg>
@@ -239,7 +239,7 @@ export default function Header({ search }) {
                       transform="translate(0 -117.336)"
                       fill="currentColor"
                       stroke="currentColor"
-                      stroke-width="1"
+                      strokeWidth="1"
                     />
                   </g>
                 </svg>
@@ -307,7 +307,7 @@ export default function Header({ search }) {
                       transform="translate(0 -117.336)"
                       fill="currentColor"
                       stroke="currentColor"
-                      stroke-width="1"
+                      strokeWidth="1"
                     />
                   </g>
                 </svg>
@@ -375,7 +375,7 @@ export default function Header({ search }) {
                       transform="translate(0 -117.336)"
                       fill="currentColor"
                       stroke="currentColor"
-                      stroke-width="1"
+                      strokeWidth="1"
                     />
                   </g>
                 </svg>
@@ -490,9 +490,9 @@ export default function Header({ search }) {
                     transform="translate(-6.129 -14.064)"
                     fill="none"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="3"
                   />
                   <path
                     id="Path_637"
@@ -501,9 +501,9 @@ export default function Header({ search }) {
                     transform="translate(-13.403 -14.064)"
                     fill="none"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="3"
                   />
                   <path
                     id="Path_638"
@@ -512,9 +512,9 @@ export default function Header({ search }) {
                     transform="translate(-1.5 -1.5)"
                     fill="none"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="3"
                   />
                 </g>
               </svg>

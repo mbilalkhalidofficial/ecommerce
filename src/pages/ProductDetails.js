@@ -142,9 +142,9 @@ export default function ProductDetails() {
                       transform="translate(-0.823 -2.997)"
                       fill="none"
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                     />
                   </svg>
                 </button>
@@ -161,9 +161,9 @@ export default function ProductDetails() {
                         d="M31.5,7.5A4.5,4.5,0,1,1,27,3,4.5,4.5,0,0,1,31.5,7.5Z"
                         fill="none"
                         stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                       />
                       <path
                         id="Path_6"
@@ -171,9 +171,9 @@ export default function ProductDetails() {
                         d="M13.5,18A4.5,4.5,0,1,1,9,13.5,4.5,4.5,0,0,1,13.5,18Z"
                         fill="none"
                         stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                       />
                       <path
                         id="Path_7"
@@ -181,9 +181,9 @@ export default function ProductDetails() {
                         d="M31.5,28.5A4.5,4.5,0,1,1,27,24,4.5,4.5,0,0,1,31.5,28.5Z"
                         fill="none"
                         stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                       />
                       <path
                         id="Path_8"
@@ -191,9 +191,9 @@ export default function ProductDetails() {
                         d="M12.885,20.265l10.245,5.97"
                         fill="none"
                         stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                       />
                       <path
                         id="Path_9"
@@ -201,9 +201,9 @@ export default function ProductDetails() {
                         d="M23.115,9.765l-10.23,5.97"
                         fill="none"
                         stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                       />
                     </g>
                   </svg>
@@ -327,9 +327,9 @@ export default function ProductDetails() {
                           transform="translate(-6.129 -14.064)"
                           fill="none"
                           stroke="#fff"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="3"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="3"
                         />
                         <path
                           id="Path_637"
@@ -338,9 +338,9 @@ export default function ProductDetails() {
                           transform="translate(-13.403 -14.064)"
                           fill="none"
                           stroke="#fff"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="3"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="3"
                         />
                         <path
                           id="Path_638"
@@ -349,9 +349,9 @@ export default function ProductDetails() {
                           transform="translate(-1.5 -1.5)"
                           fill="none"
                           stroke="#fff"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="3"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="3"
                         />
                       </g>
                     </svg>
@@ -478,9 +478,9 @@ export default function ProductDetails() {
                 transform="translate(-3 -3)"
                 fill="none"
                 stroke="#000"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="3"
               />
             </svg>
             <div className="customer__link__label">24/7 Customer Care</div>
@@ -503,9 +503,9 @@ export default function ProductDetails() {
                   transform="translate(-4.5 -3)"
                   fill="none"
                   stroke="#000"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="3"
                 />
                 <path
                   id="Path_11"
@@ -514,9 +514,9 @@ export default function ProductDetails() {
                   transform="translate(-4.5 -0.551)"
                   fill="none"
                   stroke="#000"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="3"
                 />
                 <path
                   id="Path_12"
@@ -525,9 +525,9 @@ export default function ProductDetails() {
                   transform="translate(-1.438 1.898)"
                   fill="none"
                   stroke="#000"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="3"
                 />
               </g>
             </svg>

@@ -38,8 +38,8 @@ export default function OrderPlaced() {
               x2="0.5"
               gradientUnits="objectBoundingBox"
             >
-              <stop offset="0" stop-color="#00b59c" />
-              <stop offset="1" stop-color="#9cffac" />
+              <stop offset="0" stopColor="#00b59c" />
+              <stop offset="1" stopColor="#9cffac" />
             </linearGradient>
             <linearGradient
               id="linear-gradient-2"
@@ -48,8 +48,8 @@ export default function OrderPlaced() {
               x2="0.5"
               gradientUnits="objectBoundingBox"
             >
-              <stop offset="0" stop-color="#c3ffe8" />
-              <stop offset="0.997" stop-color="#f0fff4" />
+              <stop offset="0" stopColor="#c3ffe8" />
+              <stop offset="0.997" stopColor="#f0fff4" />
             </linearGradient>
           </defs>
           <g

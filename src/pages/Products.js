@@ -315,9 +315,9 @@ export default function Home() {
                 transform="translate(-3 -3)"
                 fill="none"
                 stroke="#000"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="3"
               />
             </svg>
             <div className="customer__link__label">24/7 Customer Care</div>
@@ -340,9 +340,9 @@ export default function Home() {
                   transform="translate(-4.5 -3)"
                   fill="none"
                   stroke="#000"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="3"
                 />
                 <path
                   id="Path_11"
@@ -351,9 +351,9 @@ export default function Home() {
                   transform="translate(-4.5 -0.551)"
                   fill="none"
                   stroke="#000"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="3"
                 />
                 <path
                   id="Path_12"
@@ -362,9 +362,9 @@ export default function Home() {
                   transform="translate(-1.438 1.898)"
                   fill="none"
                   stroke="#000"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="3"
                 />
               </g>
             </svg>

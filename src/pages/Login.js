@@ -1,29 +1,115 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Auth.scss";
 import Header from "../components/Header";
 import HomeBG from "../assets/HomeBG.png";
 import InputBox from "../components/InputBox";
-import LoginButton from "../components/BtnComponent";
 import { Link } from "react-router-dom";
 import BtnComponent from "../components/BtnComponent";
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import {
+  getAuth,
+  onAuthStateChanged,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  GoogleAuthProvider,
+  signInWithPopup,
+} from "firebase/auth";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBi3ZA_IsqCU6rQecvA-fVUQbomJoDfNsU",
+  authDomain: "ecommerce-crazybeings.firebaseapp.com",
+  projectId: "ecommerce-crazybeings",
+  storageBucket: "ecommerce-crazybeings.appspot.com",
+  messagingSenderId: "314763531383",
+  appId: "1:314763531383:web:35b0925878bac33f73e272",
+  measurementId: "G-D7KMBEHE97",
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+const auth = getAuth();
 
 export default function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed in
+        const user = userCredential.user;
+        console.log(user);
+        setError(false);
+        setErrorMessage("");
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        setError(true);
+        console.log(errorCode);
+        setErrorMessage(
+          errorMessage.includes("wrong-password")
+            ? "Wrong Password"
+            : "User Doesn't exit"
+        );
+      });
+  }
+  function handleGoogleLogin() {
+    const provider = new GoogleAuthProvider();
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        // This gives you a Google Access Token. You can use it to access the Google API.
+        const credential = GoogleAuthProvider.credentialFromResult(result);
+        const token = credential.accessToken;
+        // The signed-in user info.
+        const user = result.user;
+        // ...
+      })
+      .catch((error) => {
+        // Handle Errors here.
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        // The email of the user's account used.
+        const email = error.email;
+        // The AuthCredential type that was used.
+        const credential = GoogleAuthProvider.credentialFromError(error);
+        // ...
+      });
+  }
   return (
     <>
       <Header />
       <div className="login__page">
         <img src={HomeBG} alt="login__bg" />
         <div className="login__bg__overlay">
-          <form className="login__form">
+          <form className="login__form" onSubmit={handleSubmit}>
             <div className="login__form__heading">Login</div>
             <InputBox
               placeholder="Email"
               type="email"
+              onChange={(e) => {
+                setEmail(e.target.value);
+              }}
+              value={email}
               inputStyle={{ marginBottom: "1em" }}
             />
             <InputBox
               placeholder="Password"
               type="password"
+              onChange={(e) => {
+                setPassword(e.target.value);
+              }}
+              value={password}
               inputStyle={{ marginBottom: "1em" }}
             />
             <div className="login__form__row">
@@ -38,16 +124,17 @@ export default function Login() {
                 Forget Password?
               </Link>
             </div>
-            <Link to="/" style={{ textDecoration: "none" }}>
-              <BtnComponent
-                placeholder="Login"
-                btnStyle={{ margin: "2.5em 0em", minWidth: "200px" }}
-              />
-            </Link>
+
+            <BtnComponent
+              placeholder="Login"
+              btnStyle={{ margin: "2.5em 0em", minWidth: "200px" }}
+              type="submit"
+            />
+            {error ? <div style={{ color: "red" }}>{errorMessage}</div> : null}
 
             <div>Log In using</div>
             <div className="signup__social__links">
-              <Link className="signup__social__link">
+              <a href="#" className="signup__social__link">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="13.735"
@@ -62,8 +149,8 @@ export default function Login() {
                     fill="#3b50ff"
                   />
                 </svg>
-              </Link>
-              <Link className="signup__social__link">
+              </a>
+              <div onClick={handleGoogleLogin} className="signup__social__link">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="34.969"
@@ -78,8 +165,8 @@ export default function Login() {
                     fill="#fb0606"
                   />
                 </svg>
-              </Link>
-              <Link className="signup__social__link">
+              </div>
+              <a href="#" className="signup__social__link">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="29.579"
@@ -94,7 +181,7 @@ export default function Login() {
                     fill="#3ba4ff"
                   />
                 </svg>
-              </Link>
+              </a>
             </div>
             <div style={{ marginTop: "3em" }}>
               Already have an account?{" "}

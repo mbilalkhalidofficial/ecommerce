@@ -48,9 +48,9 @@ export default function ProductCard({
                   transform="translate(-6.129 -14.064)"
                   fill="none"
                   stroke="#fff"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="3"
                 />
                 <path
                   id="Path_637"
@@ -59,9 +59,9 @@ export default function ProductCard({
                   transform="translate(-13.403 -14.064)"
                   fill="none"
                   stroke="#fff"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="3"
                 />
                 <path
                   id="Path_638"
@@ -70,9 +70,9 @@ export default function ProductCard({
                   transform="translate(-1.5 -1.5)"
                   fill="none"
                   stroke="#fff"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="3"
                 />
               </g>
             </svg>

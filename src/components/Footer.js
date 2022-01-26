@@ -102,8 +102,8 @@ export default function Footer() {
                   y2="1"
                   gradientUnits="objectBoundingBox"
                 >
-                  <stop offset="0" stop-color="#ff00a5" />
-                  <stop offset="1" stop-color="#f39b12" />
+                  <stop offset="0" stopColor="#ff00a5" />
+                  <stop offset="1" stopColor="#f39b12" />
                 </linearGradient>
               </defs>
               <path
